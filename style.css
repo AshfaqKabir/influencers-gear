@@ -53,6 +53,14 @@ li {
   font-weight: bold;
   border: 1px solid #fff;
   border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn svg {
+  transition: all 0.4s ease 0.1s;
+  margin-left: 8px;
 }
 
 .btn:hover {
@@ -60,6 +68,15 @@ li {
   background-color: #fff;
   color: var(--btnColor);
   cursor: pointer;
+}
+
+.btn:hover svg {
+  margin-left: 40px;
+}
+
+.btn:hover svg path {
+  fill: var(--btnColor);
+  margin-left: 30px;
 }
 
 /* Container */
@@ -358,6 +375,10 @@ footer .socials {
 @media (max-width: 991.98px) {
   .container {
     max-width: 784px;
+  }
+
+  .btn {
+    margin: 0 auto;
   }
 
   /* HEADER */
