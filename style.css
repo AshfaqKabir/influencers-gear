@@ -219,6 +219,89 @@ header nav ul li:hover a {
   min-width: 100px;
 }
 
+/* NEWSLETTER SECTION */
+#newsletter {
+  min-width: 1110px;
+  min-height: 400px;
+  background: #c4c4c4;
+  border-radius: 5px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--primaryFont) !important;
+}
+
+#newsletter > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newsletter h2 {
+  color: var(--titleColor);
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#newsletter p {
+  color: #6c6c6c;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+#newsletter .email-sub {
+  max-width: 640px;
+}
+
+#newsletter .email-sub input[type="email"] {
+  border: 1px solid #fff;
+  border-radius: none;
+  padding: 20px;
+  width: 450px;
+  height: 55px;
+  font-family: var(--primaryFont);
+  font-weight: 500;
+  color: var(--titleColor);
+  font-size: 18px;
+}
+
+#newsletter .email-sub input[type="email"]:hover {
+  border: 1px solid var(--btnColor);
+}
+
+#newsletter .email-sub input[type="email"]::placeholder {
+  color: #828181;
+  font-family: var(--primaryFont);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+#newsletter .email-sub input[type="button"] {
+  border: none;
+  border-radius: none;
+  width: 190px;
+  height: 55px;
+  margin-left: -5px;
+  background: var(--titleColor);
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  transition: all 0.6s ease;
+}
+
+#newsletter .email-sub input[type="button"]:hover {
+  background: var(--btnColor);
+  cursor: pointer;
+}
+
 /* FOOTER */
 footer {
   background: #0a0826;
@@ -323,6 +406,15 @@ footer .socials {
   #products-listing .product-cards .card {
     padding: 15px;
   }
+
+  /* NEWSLETTER SECTION */
+  #newsletter {
+    min-width: 780px;
+  }
+
+  #newsletter h2 {
+    font-size: 30px;
+  }
 }
 
 /* MOBILE LAYOUT */
@@ -387,5 +479,43 @@ footer .socials {
 
   #products-listing .product-cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* NEWSLETTER SECTION */
+  #newsletter {
+    min-width: 328px;
+  }
+
+  #newsletter h2 {
+    max-width: 280px;
+    font-size: 20px;
+  }
+
+  #newsletter p {
+    max-width: 300px;
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+
+  #newsletter .email-sub {
+    max-width: 100%;
+  }
+
+  #newsletter .email-sub input[type="email"] {
+    padding: 10px;
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  #newsletter .email-sub input[type="email"]::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  #newsletter .email-sub input[type="button"] {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
   }
 }
