@@ -51,8 +51,15 @@ li {
   color: #ffffff;
   font-family: var(--primaryFont);
   font-weight: bold;
-  border: none;
+  border: 1px solid #fff;
   border-radius: 40px;
+}
+
+.btn:hover {
+  border: 1px solid var(--btnColor);
+  background-color: #fff;
+  color: var(--btnColor);
+  cursor: pointer;
 }
 
 /* Container */
@@ -109,6 +116,13 @@ header nav ul li:hover a {
   margin-bottom: 16px;
 }
 
+#hero .hero-content:hover .hero-title {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  cursor: pointer;
+}
+
 #hero .hero-content .hero-para {
   max-width: 505px;
   color: var(--titleColor);
@@ -147,6 +161,10 @@ header nav ul li:hover a {
   padding-bottom: 0;
   border-radius: 5px;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+#products-listing .product-cards .card:hover {
+  cursor: pointer;
 }
 
 #products-listing .product-cards .card-details {
